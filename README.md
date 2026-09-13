@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="media/icon.png" width="128" height="128" alt="Read Aloud Logo" style="border-radius: 24px;" />
+  <img src="https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main/media/icon.png" width="128" height="128" alt="Read Aloud Logo" style="border-radius: 24px;" />
 </p>
 
 # 🔊 Read Aloud: Offline Text to Speech (TTS) & PDF Reader
@@ -37,23 +37,17 @@
 ### 🛸 1. Live Document Reading & Cosmo Word Tracker
 Cosmo automatically tracks every spoken word with dynamic reticles, waypoint dots, and auto-scrolling sentences.
 
-<p align="center">
-  <img src="media/2.png" alt="Cosmo Live Document Reading Tracker" width="700" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" />
-</p>
+![Cosmo Live Document Reading Tracker](https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main/media/2.png)
 
 ### 📊 2. Alien Progress Telemetry
 Keep track of your document completion with circular progress gauges and target coordinates.
 
-<p align="center">
-  <img src="media/4.png" alt="Alien Progress Telemetry Sidebar" width="340" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" />
-</p>
+![Alien Progress Telemetry Sidebar](https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main/media/4.png)
 
 ### 🎛️ 3. Neural Playback Dock & Audio Waveform
 Full playback control dock with animated waveforms, voice narrator info, and sub-1x to 2x speed steps.
 
-<p align="center">
-  <img src="media/3.png" alt="Neural Audio Playback Dock" width="700" style="border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.5);" />
-</p>
+![Neural Audio Playback Dock](https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main/media/3.png)
 
 ---
 
