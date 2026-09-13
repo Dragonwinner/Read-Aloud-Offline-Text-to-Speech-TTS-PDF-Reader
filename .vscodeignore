@@ -1,0 +1,26 @@
+.vscode/**
+.vscode-test/**
+src/**
+tsconfig.json
+sample.md
+sample.txt
+download_assets.js
+download_models.ps1
+install.js
+IMPLEMENTATION_PLAN.md
+*.vsix
+test_out.wav
+test_output.wav
+**/*.map
+.git/**
+.gitignore
+
+# Whitelist offline models, binaries, compiled scripts, node_modules, media assets, and license
+!out/**
+!node_modules/**
+!voices/**
+!bin/**
+!media/**
+!package.json
+!README.md
+!LICENSE

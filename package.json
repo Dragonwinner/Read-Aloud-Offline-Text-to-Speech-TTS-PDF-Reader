@@ -1,0 +1,308 @@
+{
+  "name": "read-aloud-text-to-speech-tts",
+  "displayName": "Read Aloud: Offline Text to Speech (TTS) & PDF Reader",
+  "description": "100% Offline Neural Text to Speech (TTS) for PDF, Markdown & Code. Features natural voices, zero API keys, and Cosmo — a live word-tracking alien companion.",
+  "version": "1.0.0",
+  "publisher": "alisha",
+  "icon": "media/icon.png",
+  "license": "MIT",
+  "pricing": "Free",
+  "qna": "marketplace",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/issues"
+  },
+  "homepage": "https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader#readme",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Education",
+    "Machine Learning"
+  ],
+  "keywords": [
+    "read aloud",
+    "text to speech",
+    "tts",
+    "speech",
+    "voice reader",
+    "pdf reader",
+    "offline tts",
+    "audio reader",
+    "screen reader",
+    "markdown reader",
+    "neural voice",
+    "piper tts",
+    "accessibility"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:alishaVoice.readSelection",
+    "onCommand:alishaVoice.readFromCursor",
+    "onCommand:alishaVoice.readFile",
+    "onCommand:alishaVoice.pauseResume",
+    "onCommand:alishaVoice.stop",
+    "onCommand:alishaVoice.toggleVoice",
+    "onCommand:alishaVoice.toggleAutoReadOnCopy",
+    "onCommand:alishaVoice.toggleAlienPet",
+    "onCommand:alishaVoice.setSpeed",
+    "onCommand:alishaVoice.showMenu",
+    "onCommand:alishaVoice.setupModels",
+    "onView:alishaVoice.sidebarView",
+    "onLanguage:markdown",
+    "onLanguage:plaintext",
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "alisha-companion",
+          "title": "Read Aloud & Cosmo",
+          "icon": "media/alien-icon.png"
+        }
+      ]
+    },
+    "views": {
+      "alisha-companion": [
+        {
+          "type": "webview",
+          "id": "alishaVoice.sidebarView",
+          "name": "Cosmo Space Companion"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "alishaVoice.readSelection",
+        "title": "🔊 Read Selected Text",
+        "category": "ALISHA",
+        "icon": "$(play)"
+      },
+      {
+        "command": "alishaVoice.readFromCursor",
+        "title": "🔊 Read From Cursor",
+        "category": "ALISHA",
+        "icon": "$(play)"
+      },
+      {
+        "command": "alishaVoice.readFile",
+        "title": "🔊 Read Entire File",
+        "category": "ALISHA",
+        "icon": "$(book)"
+      },
+      {
+        "command": "alishaVoice.pauseResume",
+        "title": "Pause / Resume",
+        "category": "ALISHA",
+        "icon": "$(debug-pause)"
+      },
+      {
+        "command": "alishaVoice.stop",
+        "title": "Stop Playback",
+        "category": "ALISHA",
+        "icon": "$(debug-stop)"
+      },
+      {
+        "command": "alishaVoice.toggleVoice",
+        "title": "Switch Voice (Male / Female)",
+        "category": "ALISHA",
+        "icon": "$(account)"
+      },
+      {
+        "command": "alishaVoice.toggleAutoReadOnCopy",
+        "title": "📋 Toggle Auto-Read on Copy (PDF Mode)",
+        "category": "ALISHA",
+        "icon": "$(megaphone)"
+      },
+      {
+        "command": "alishaVoice.toggleAlienPet",
+        "title": "🐾 Open Cute Alien Pet Companion (Cosmo)",
+        "category": "ALISHA",
+        "icon": "$(heart)"
+      },
+      {
+        "command": "alishaVoice.setSpeed",
+        "title": "⚡ Set Playback Speed (0.5x to 2.0x)",
+        "category": "ALISHA",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "alishaVoice.showMenu",
+        "title": "ALISHA: Quick Actions Menu",
+        "category": "ALISHA"
+      },
+      {
+        "command": "alishaVoice.setupModels",
+        "title": "Setup / Verify Offline Voice Models",
+        "category": "ALISHA"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "alishaVoice.readSelection",
+        "key": "alt+r",
+        "mac": "cmd+alt+r"
+      },
+      {
+        "command": "alishaVoice.toggleAutoReadOnCopy",
+        "key": "alt+c",
+        "mac": "cmd+alt+c"
+      },
+      {
+        "command": "alishaVoice.pauseResume",
+        "key": "alt+p",
+        "mac": "cmd+alt+p"
+      },
+      {
+        "command": "alishaVoice.stop",
+        "key": "alt+s",
+        "mac": "cmd+alt+s"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "alishaVoice.submenu",
+        "label": "🔊 ALISHA Voice Reader"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "alishaVoice.submenu",
+          "group": "navigation@100"
+        }
+      ],
+      "webview/context": [
+        {
+          "command": "alishaVoice.readSelection",
+          "group": "navigation@1"
+        },
+        {
+          "command": "alishaVoice.toggleAutoReadOnCopy",
+          "group": "navigation@2"
+        },
+        {
+          "command": "alishaVoice.readFile",
+          "group": "navigation@3"
+        },
+        {
+          "command": "alishaVoice.pauseResume",
+          "group": "navigation@4"
+        },
+        {
+          "command": "alishaVoice.stop",
+          "group": "navigation@5"
+        }
+      ],
+      "alishaVoice.submenu": [
+        {
+          "command": "alishaVoice.readSelection",
+          "group": "1_read@1"
+        },
+        {
+          "command": "alishaVoice.toggleAutoReadOnCopy",
+          "group": "1_read@1.2"
+        },
+        {
+          "command": "alishaVoice.readFromCursor",
+          "group": "1_read@1.5"
+        },
+        {
+          "command": "alishaVoice.readFile",
+          "group": "1_read@2"
+        },
+        {
+          "command": "alishaVoice.pauseResume",
+          "group": "2_controls@1"
+        },
+        {
+          "command": "alishaVoice.stop",
+          "group": "2_controls@2"
+        },
+        {
+          "command": "alishaVoice.toggleVoice",
+          "group": "3_settings@1"
+        },
+        {
+          "command": "alishaVoice.toggleAlienPet",
+          "group": "3_settings@2"
+        },
+        {
+          "command": "alishaVoice.setSpeed",
+          "group": "3_settings@3"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "alishaVoice.readFile",
+          "group": "navigation@100",
+          "when": "resourceExtname =~ /\\.(txt|md|pdf|markdown)$/i"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "alishaVoice.readFile",
+          "group": "navigation",
+          "when": "resourceExtname =~ /\\.(txt|md|pdf|markdown)$/i"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "ALISHA - DOCS Reader",
+      "properties": {
+        "alishaVoice.gender": {
+          "type": "string",
+          "enum": [
+            "female",
+            "male"
+          ],
+          "default": "female",
+          "description": "Default offline neural voice (Female: Amy, Male: Ryan)."
+        },
+        "alishaVoice.speed": {
+          "type": "number",
+          "default": 1.0,
+          "minimum": 0.5,
+          "maximum": 2.0,
+          "description": "Playback speech rate multiplier."
+        },
+        "alishaVoice.highlightActiveText": {
+          "type": "boolean",
+          "default": true,
+          "description": "Highlight sentences in the active editor in real-time as they are read."
+        },
+        "alishaVoice.skipCodeBlocksInMarkdown": {
+          "type": "boolean",
+          "default": true,
+          "description": "Skip reading raw code blocks in Markdown files."
+        },
+        "alishaVoice.customPiperPath": {
+          "type": "string",
+          "default": "",
+          "description": "Optional custom path to local Piper executable if not using bundled binary."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1",
+    "remove-markdown": "^0.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/pdf-parse": "^1.1.4",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.3"
+  }
+}

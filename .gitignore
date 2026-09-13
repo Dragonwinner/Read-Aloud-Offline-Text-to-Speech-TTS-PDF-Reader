@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Compiled TypeScript output
+out/
+dist/
+
+# VSIX package files (binary archives over 100MB should be uploaded as GitHub Releases)
+*.vsix
+
+# Temporary audio test and log files
+*.wav
+*.log
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode-test/
+.antigravity/

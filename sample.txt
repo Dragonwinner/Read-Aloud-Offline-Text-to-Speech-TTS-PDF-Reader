@@ -1,0 +1,5 @@
+Welcome to ALISHA - DOCS Reader!
+
+This is a 100% offline, privacy-first VS Code extension designed to read text, markdown, and PDF documents aloud using natural human-like neural voices.
+
+You can select any part of this text and click 'ALISHA: Read Selected Text' to listen to it immediately.
