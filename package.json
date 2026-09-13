@@ -2,7 +2,7 @@
   "name": "read-aloud-text-to-speech-tts",
   "displayName": "Read Aloud: Offline Text to Speech (TTS) & PDF Reader",
   "description": "Turn your VS Code into an offline neural voice reader. 100% private text-to-speech for PDF, Markdown, and Code with natural voices, zero API keys, and Cosmo alien companion.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "codewithgod",
   "icon": "media/icon.png",
   "galleryBanner": {
@@ -296,7 +296,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "package": "vsce package --no-dependencies --allow-missing-repository --baseImagesUrl https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main --baseContentUrl https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/blob/main"
+    "package": "vsce package --allow-missing-repository --baseImagesUrl https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main --baseContentUrl https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/blob/main"
   },
   "dependencies": {
     "pdf-parse": "^1.1.1",
