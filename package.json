@@ -3,7 +3,7 @@
   "displayName": "Read Aloud: Offline Text to Speech (TTS) & PDF Reader",
   "description": "100% Offline Neural Text to Speech (TTS) for PDF, Markdown & Code. Features natural voices, zero API keys, and Cosmo — a live word-tracking alien companion.",
   "version": "1.0.0",
-  "publisher": "alisha",
+  "publisher": "codewithgod",
   "icon": "media/icon.png",
   "license": "MIT",
   "pricing": "Free",
