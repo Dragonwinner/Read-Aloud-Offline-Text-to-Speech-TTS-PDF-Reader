@@ -1,13 +1,15 @@
 {
-  "name": "cosmo-voice-reader",
-  "displayName": "Cosmo: Offline Text to Speech (TTS) & PDF Reader",
-  "description": "100% Offline Neural Text to Speech (TTS) for PDF, Markdown & Code. Features natural voices, zero API keys, and Cosmo — a live word-tracking alien companion.",
-  "version": "1.0.0",
+  "name": "read-aloud-text-to-speech-tts",
+  "displayName": "Read Aloud: Offline Text to Speech (TTS) & PDF Reader",
+  "description": "Turn your VS Code into an offline neural voice reader. 100% private text-to-speech for PDF, Markdown, and Code with natural voices, zero API keys, and Cosmo alien companion.",
+  "version": "1.0.1",
   "publisher": "codewithgod",
   "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#0a0e1a",
+    "theme": "dark"
+  },
   "license": "MIT",
-  "pricing": "Free",
-  "qna": "marketplace",
   "repository": {
     "type": "git",
     "url": "https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader.git"
@@ -20,9 +22,10 @@
     "vscode": "^1.85.0"
   },
   "categories": [
+    "Programming Languages",
+    "Snippets",
     "Other",
-    "Education",
-    "Machine Learning"
+    "Education"
   ],
   "keywords": [
     "read aloud",
@@ -79,67 +82,67 @@
     "commands": [
       {
         "command": "alishaVoice.readSelection",
-        "title": "🔊 Read Selected Text",
-        "category": "ALISHA",
+        "title": "Read Selected Text",
+        "category": "Cosmo Voice",
         "icon": "$(play)"
       },
       {
         "command": "alishaVoice.readFromCursor",
-        "title": "🔊 Read From Cursor",
-        "category": "ALISHA",
+        "title": "Read From Cursor",
+        "category": "Cosmo Voice",
         "icon": "$(play)"
       },
       {
         "command": "alishaVoice.readFile",
-        "title": "🔊 Read Entire File",
-        "category": "ALISHA",
+        "title": "Read Entire File",
+        "category": "Cosmo Voice",
         "icon": "$(book)"
       },
       {
         "command": "alishaVoice.pauseResume",
         "title": "Pause / Resume",
-        "category": "ALISHA",
+        "category": "Cosmo Voice",
         "icon": "$(debug-pause)"
       },
       {
         "command": "alishaVoice.stop",
         "title": "Stop Playback",
-        "category": "ALISHA",
+        "category": "Cosmo Voice",
         "icon": "$(debug-stop)"
       },
       {
         "command": "alishaVoice.toggleVoice",
         "title": "Switch Voice (Male / Female)",
-        "category": "ALISHA",
+        "category": "Cosmo Voice",
         "icon": "$(account)"
       },
       {
         "command": "alishaVoice.toggleAutoReadOnCopy",
-        "title": "📋 Toggle Auto-Read on Copy (PDF Mode)",
-        "category": "ALISHA",
+        "title": "Toggle Auto-Read on Copy (PDF Mode)",
+        "category": "Cosmo Voice",
         "icon": "$(megaphone)"
       },
       {
         "command": "alishaVoice.toggleAlienPet",
-        "title": "🐾 Open Cute Alien Pet Companion (Cosmo)",
-        "category": "ALISHA",
+        "title": "Open Cosmo Alien Companion",
+        "category": "Cosmo Voice",
         "icon": "$(heart)"
       },
       {
         "command": "alishaVoice.setSpeed",
-        "title": "⚡ Set Playback Speed (0.5x to 2.0x)",
-        "category": "ALISHA",
+        "title": "Set Playback Speed (0.5x to 2.0x)",
+        "category": "Cosmo Voice",
         "icon": "$(dashboard)"
       },
       {
         "command": "alishaVoice.showMenu",
-        "title": "ALISHA: Quick Actions Menu",
-        "category": "ALISHA"
+        "title": "Cosmo: Quick Actions Menu",
+        "category": "Cosmo Voice"
       },
       {
         "command": "alishaVoice.setupModels",
         "title": "Setup / Verify Offline Voice Models",
-        "category": "ALISHA"
+        "category": "Cosmo Voice"
       }
     ],
     "keybindings": [
@@ -293,7 +296,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "package": "vsce package"
+    "package": "vsce package --no-dependencies --allow-missing-repository --baseImagesUrl https://raw.githubusercontent.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/main --baseContentUrl https://github.com/Dragonwinner/Read-Aloud-Offline-Text-to-Speech-TTS-PDF-Reader/blob/main"
   },
   "dependencies": {
     "pdf-parse": "^1.1.1",
@@ -303,6 +306,8 @@
     "@types/node": "^20.11.0",
     "@types/pdf-parse": "^1.1.4",
     "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.24.0",
+    "ovsx": "^1.1.1",
     "typescript": "^5.3.3"
   }
 }

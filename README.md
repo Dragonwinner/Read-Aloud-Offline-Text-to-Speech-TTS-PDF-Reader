@@ -6,10 +6,10 @@
 
 > **100% Offline, Privacy-First Neural Voice Reader for PDF, Markdown, and Code with Live Alien Companion.**
 
-[![Offline Neural TTS](https://img.shields.io/badge/TTS-100%25%20Offline-brightgreen)](#)
-[![Zero API Keys](https://img.shields.io/badge/API%20Keys-Zero%20Required-blue)](#)
-[![Natural Voices](https://img.shields.io/badge/Voices-Neural%20Male%20%26%20Female-orange)](#)
-[![PDF & Markdown](https://img.shields.io/badge/Supported-PDF%20%7C%20MD%20%7C%20TXT-purple)](#)
+![Offline Neural TTS](https://img.shields.io/badge/TTS-100%25%20Offline-brightgreen)
+![Zero API Keys](https://img.shields.io/badge/API%20Keys-Zero%20Required-blue)
+![Natural Voices](https://img.shields.io/badge/Voices-Neural%20Male%20%26%20Female-orange)
+![PDF & Markdown](https://img.shields.io/badge/Supported-PDF%20%7C%20MD%20%7C%20TXT-purple)
 
 **Read Aloud (TTS)** is an ultra-fast, 100% offline VS Code extension that reads **PDF documents (`.pdf`)**, **Markdown notes (`.md`)**, and **Code / Plain Text (`.txt`)** aloud using high-fidelity local neural voices without requiring any API keys or subscriptions.
 
@@ -75,7 +75,7 @@ Full playback control dock with animated waveforms, voice narrator info, and sub
 | Feature | 🔊 Read Aloud (TTS) | 🌐 Cloud TTS Extensions |
 | :--- | :--- | :--- |
 | **Cost** | **100% Free & Unlimited** | Pay-per-character / API sub |
-| **API Keys** | **Zero Required** | OpenAI / ElevenLabs key needed |
+| **API Keys** | **Zero Required** | Cloud API key needed |
 | **Internet Required** | **NO (100% Offline)** | YES (Fails without internet) |
 | **Privacy & Security** | **Code & PDFs Never Leave PC** | Sent to third-party cloud servers |
 | **Latency** | **Sub-200ms Local Pipelining** | Network upload/download delay |
