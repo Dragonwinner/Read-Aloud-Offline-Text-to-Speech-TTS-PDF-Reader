@@ -2,7 +2,7 @@
   "name": "read-aloud-text-to-speech-tts",
   "displayName": "Read Aloud: Offline Text to Speech (TTS) & PDF Reader",
   "description": "Turn your VS Code into an offline neural voice reader. 100% private text-to-speech for PDF, Markdown, and Code with natural voices, zero API keys, and Cosmo alien companion.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "codewithgod",
   "icon": "media/icon.png",
   "galleryBanner": {

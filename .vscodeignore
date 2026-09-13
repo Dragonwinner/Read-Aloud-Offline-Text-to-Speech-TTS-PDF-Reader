@@ -15,9 +15,10 @@ test_output.wav
 .git/**
 .gitignore
 
-# Whitelist offline models, binaries, compiled scripts, node_modules, media assets, package.json, and license
-!bin/**
-!voices/**
+bin/**
+voices/**
+
+# Whitelist compiled scripts, node_modules, media assets, package.json, and license
 !out/**
 !node_modules/**
 !media/**
